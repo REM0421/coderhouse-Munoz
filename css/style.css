@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*
+colores 
+       #6096B4
+       #93BFCF
+       #BDCDD6
+       #EEE9DA
+
+fuentes
+    font-family: 'Labrada', serif;
+    font-family: 'Labrada', serif;
+
+*/
+body{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+
+}
+header {
+  background-color: #6096b4;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+}
+
+.tituloPrincipal{
+  width: 100%;
+  height: 400px;
+}
+
+.tituloPrincipal h1{
+  padding: 60px;
+  margin-top: 70px;
+
+  font-family: "Labrada", serif;
+  font-size: 150px;
+  font-weight: initial;
+  text-align: center;
+  letter-spacing: 10px;
+  color: white;
+  
+}
+
+.navegador {
+/* style */
+  background-color: #eee9da;
+ 
+
+  /*box model*/
+  width: 100%;
+  height: 300px;
+}
+
+.menuPrincipal {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  flex-wrap: nowrap;
+
+  margin-top: 100px;
+  list-style-type: none;
+  font-family: "Jacques Francois", serif;
+  font-size: 100px;
+}
+
+.itemsNavegador a{
+  color: black;
+  text-decoration: none;
+  
+}
+
+.itemsNavegador a:hover{
+  color: rgb(0, 145, 255);
+  font-size: 120px;
+}
+
+main {
+  background-image: url(../assets/fondo1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  
+}
+
+.promociones{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  
+}
+
+.promociones h3{
+  
+  width: 435px;
+  height: 87px;
+
+  
+  font-family: 'Jacques Francois';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100px; 
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: capitalize;
+}
+
+.imgPromos{
+  width: 1100px;
+  height: 1300px;
+  
+}
+
+
+.gridFooter {
+  background-color: #93bfcf;
+  width: 100%;
+  height: 500px;
+
+  display: grid;
+  
+  grid-template-columns: 100px 1fr 1fr 1fr 2fr;
+  grid-template-rows: repeat(2 1fr);
+
+  grid-template-areas: 
+  " . item1 item1 . item3"
+  " . item2 item2 . item4"
+  ;
+
+
+}
+
+.selectGrid1{
+  grid-area: item1;
+  justify-self: center;
+  align-self: end;
+
+  font-size: 70px;
+  
+  
+
+}
+
+.selectGrid2{
+  grid-area: item2;
+  justify-self: center;
+  align-self: center;
+  
+  
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.selectGrid3{
+  grid-area: item3;
+
+  font-size: 70px;
+  justify-self: center;
+  align-self: end;
+  
+
+}
+
+.selectGrid4{
+  grid-area: item4;
+  justify-self: center;
+  align-self: center;
+  
+  
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly
+  
+}
+
+.tituloContacto{
+  height: 300px;
+  
+  
+  
+}
+
+.navContacto{
+  background-color: #eee9da;
+
+}
+@media (max-width:834px){
+  body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+  
+  }
+
+
+}
